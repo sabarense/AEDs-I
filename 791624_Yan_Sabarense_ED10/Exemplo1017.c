@@ -47,7 +47,7 @@ int zeroMatriz(chars fileName, int linhas, int colunas, int matriz[][colunas]){
         return;
     }
     while(!feof(arquivo) && i < colunas){
-        fscanf(arquivo,"%d", &matriz[linha][coluna]);
+        fscanf(arquivo,"%d", &matriz[linhas][colunas]);
         if(matriz[linhas][colunas] == 0){
             return true;
         }
@@ -79,5 +79,4 @@ int main(){
     lerMatrizArquivo("DADOS1.TXT", linhas, colunas, matriz);
 
     int matriz1 = lerMatrizDeArquivo("DADOS1.TXT", linhas, colunas);
-    int resposta = zeroMatriz(matriz1);
 }
