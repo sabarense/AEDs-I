@@ -14,7 +14,6 @@ void metodoRecursivo(int valor){
     recurs(6, valor);
 }
 
-
 int main(){
 
     int valor = 0;
@@ -22,9 +21,7 @@ int main(){
         printf("Digite um valor inteiro:\n");
         scanf("%i", &valor);
     }while(valor<=0);
-    
-    fflush(stdin);
 
     metodoRecursivo(valor);
-
+    
 }

@@ -5,6 +5,7 @@
  @param fileName - nome do arquivo
  @param valor - quantidade de valores
 */
+
 void writeInts(chars fileName, int valor)
 {
     // definir dados
@@ -33,7 +34,6 @@ int main(){
 
     printf("Digite um valor: ");
     scanf("%i", &valor);
-
     writeInts("DADOS6.TXT", valor);
 
 }

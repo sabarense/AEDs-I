@@ -16,8 +16,6 @@ void metodoRecursivo(int valor, int parPositivo){
 
 int main(){
 
-    IO_id("Exemplo 611");
-
     int valor = 0;
 
     do{

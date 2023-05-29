@@ -6,10 +6,10 @@ void numCrescenteExpoenteDenominador(double valor){
 
     const int numerador = 1;
     int expoente = 0;
-    printf("Os primeiros %lf valores sao:\n", valor);
+    printf("Os primeiros %.2lf valores sao:\n", valor);
 
     for(int i = 1; i <= valor; i++){
-        printf("Numeros = [%i/%lf]\n", numerador, pow(valor,expoente));
+        printf("Numeros = [%i/%.2lf]\n", numerador, pow(valor,expoente));
         expoente = expoente +1;
     }
 }

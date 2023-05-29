@@ -10,12 +10,12 @@ void somaValores(int valor){
     while(count<valor){
         if((parPositivo % 2 == 0) && (parPositivo % 5 != 0 )){
             soma = soma + parPositivo;
-            count = count + 1;    
+            count = count + 1;
+            printf("Numero a ser acrescentado na soma = %i\n", parPositivo);
         }
         parPositivo++;
     }
     
-    printf("Numero = %i\n", parPositivo);
     printf("Soma = %i", soma);    
 }
 

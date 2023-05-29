@@ -26,7 +26,6 @@ void writeInts(chars fileName, int valor)
     fclose(arquivo);
 } // fim writeInts ( )
 
-
 int main(){
 
     int valor = 0;

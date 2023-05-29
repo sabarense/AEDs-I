@@ -10,14 +10,12 @@ void adicaoNaturais(int valor){
     int soma = 0;
 
     while(count < valor){
-        i = pow(i, expoente);
-        soma = soma + i;
-        count = count + 1;
+        soma = soma + pow(i, expoente);
+        printf("Numero %i elevado a %i\n",i,expoente);
         i = i + 1;
+        count = count + 1;
     }
-
-    printf("Valor do i = %i\n", i);
-    printf("Soma = %i", soma);
+    printf("Soma dos numeros elevados a %i = %i",expoente, soma);
 }
 
 

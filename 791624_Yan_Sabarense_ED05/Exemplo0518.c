@@ -12,7 +12,6 @@ void adicaoNaturais(int valor){
         i = i + 1;
         count = count + 1;
         printf("Valor a ser somado (i):%i\n", i);
-        printf("Soma parcial:%i\n", soma);
     }
 
     printf("Soma = %i", soma);

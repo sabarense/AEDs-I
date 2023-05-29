@@ -6,7 +6,7 @@ void somaValores(int valor){
     int denominador = 0;
     double somaFracao = 0;
     int count = 0;
-    int numerador = 1;
+    const int numerador = 1;
     int parPositivo = 6;
 
     while(count<valor){
@@ -14,7 +14,7 @@ void somaValores(int valor){
             denominador = denominador + parPositivo;
             count = count + 1;
             somaFracao = somaFracao + (double)numerador/denominador;  
-            printf("[%i]/[%i]\n",numerador, denominador);
+            printf("Fracao a ser acrescentado na soma = [%i]/[%i]\n",numerador, denominador);
         }
         parPositivo++;
     }
