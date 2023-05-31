@@ -8,6 +8,7 @@ void readDoubleMatrix(int linhas, int colunas, double matriz[][colunas]){
             scanf("%lf", &matriz[i][j]);
         }
     }
+    printf("\n");
 }
 
 void printDoubleMatrix(int linhas, int colunas, double matriz[][colunas]){
@@ -18,24 +19,25 @@ void printDoubleMatrix(int linhas, int colunas, double matriz[][colunas]){
         }
         printf("\n");
     }
+    printf("\n");
 }    
 
 void printDiagonalAbaixo(int linha, int coluna, double matriz[][coluna]){
 
     for (int i = 0; i < linha; i++){
-        for (int j = 0; j <= coluna; j++){
-            if(i == j){
-                printf("[%.2lf]\n", matriz[i][j]);
-            }
+        for (int j = 0; j < i; j++){
+            printf("[%.2lf]\n", matriz[i][j]);
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 int main(){
 
     double matriz[10][10];
-    int linhas, colunas;
+    int linhas = 0;
+    int colunas = 0;
 
     do{
         printf("Digite o numero de linhas da matriz: ");

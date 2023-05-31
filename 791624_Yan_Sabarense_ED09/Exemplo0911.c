@@ -28,7 +28,8 @@ void printDoubleMatrix(int linhas, int colunas, double matriz[][colunas]){
 int main(){
 
     double matriz[10][10];
-    int linhas, colunas;
+    int linhas = 0;
+    int colunas = 0;
 
     do{
         printf("Digite o numero de linhas da matriz: ");
