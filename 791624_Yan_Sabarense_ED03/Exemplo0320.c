@@ -22,7 +22,7 @@ int main(){
         IO_printf("Digite o %i valor: ", i + 1);
         x = IO_readdouble(""); 
 
-        if(x >= a && x <= b && ) {
+        if(x >= a && x <= b) {
             count++;
         }
     }

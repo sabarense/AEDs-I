@@ -5,35 +5,36 @@
  @param fileName - nome do arquivo
  @param valor - quantidade de valores
 */
-void writeInts(chars fileName, int valor)
-{
-    // definir dados
+
+void writeInts(char* fileName, int valor){
     FILE *arquivo = fopen(fileName, "wt");
     
-    // repetir para a quantidade de dados
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return;
+    }
 
-    for (int i = 2; i < valor+2; i++)
-    {   
-        int aux = i * 3;
-        // gravar valor
-        if(aux % 2 == 0 ){
-            fprintf(arquivo, "%d\n", aux);
-        }else{
-            valor = valor + 1;
+    for(int i = 6; i < valor; i++){
+        if(i % 3 == 0 && i % 2 == 0){
+            fprintf(arquivo, "%d ", i);
         }
-    } // fim repetir
-      // fechar arquivo (INDISPENSAVEL para gravacao)
-    fclose(arquivo);
-} // fim writeInts ( )
+    }
+    fclose(arquivo); 
+}
 
-int main(){
+int leInteiro(){
 
     int valor = 0;
 
     printf("Digite um valor: ");
     scanf("%i", &valor);
 
-    writeInts("DADOS5.TXT", valor);
+    return valor;
+}
 
-    
+int main(){
+
+    int valorLido = leInteiro();
+    writeInts("DADOS1.TXT", valorLido);
+
 }

@@ -43,6 +43,8 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "Exemplo01E1.C": "cpp",
+        "math.h": "c"
     }
 }

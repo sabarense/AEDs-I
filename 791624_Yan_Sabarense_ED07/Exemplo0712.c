@@ -27,13 +27,19 @@ void writeInts(chars fileName, int valor)
     fclose(arquivo);
 } // fim writeInts ( )
 
-
-int main(){
+int leInteiro(){
 
     int valor = 0;
 
     printf("Digite um valor: ");
     scanf("%i", &valor);
-    writeInts("DADOS6.TXT", valor);
+
+    return valor;
+}
+
+int main(){
+
+    int valorLido = leInteiro();
+    writeInts("DADOS6.TXT", valorLido);
 
 }
