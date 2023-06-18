@@ -45,6 +45,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "Exemplo01E1.C": "cpp",
-        "math.h": "c"
+        "math.h": "c",
+        "stdio.h": "c"
     }
 }
