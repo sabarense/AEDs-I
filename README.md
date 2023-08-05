@@ -1,2 +1,2 @@
 # AEDs_I 💻
-Exercícios desenvolvidos na disciplina de Algoritmo e Estrutura de Dados I
+Repositório de códigos da disciplina de Algoritmos e Estrutura de Dados I
